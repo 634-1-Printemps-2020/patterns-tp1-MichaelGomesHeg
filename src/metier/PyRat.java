@@ -1,5 +1,7 @@
 package metier;
 
+import outils.Labyrinthe;
+
 import java.util.*;
 
 public class PyRat {
@@ -16,7 +18,7 @@ public class PyRat {
     public void turn(Map<Point, List<Point>> laby, int labyWidth, int labyHeight, Point position, List<Point> fromages) {
         Point pt1 = new Point(2,1);
         Point pt2 = new Point(3,1);
-        System.out.println((fromageIci(pt1) ? "Il y a un" : "Il n'y a pas de") + " fromage ici, en position " + pt1);
+        System.out.println((fromageIci(pt2) ? "Il y a un" : "Il n'y a pas de") + " fromage ici, en position " + pt2);
         System.out.println((fromageIci_EnOrdreConstant(pt2) ? "Il y a un" : "Il n'y a pas de") + " fromage ici, en position " + pt2);
         System.out.println((passagePossible(pt1, pt2) ? "Il y a un" : "Il n'y a pas de") + " passage de " + pt1 + " vers " + pt2);
         System.out.println((passagePossible_EnOrdreConstant(pt1, pt2) ? "Il y a un" : "Il n'y a pas de") + " passage de " + pt1 + " vers " + pt2);
@@ -26,6 +28,11 @@ public class PyRat {
     /* Regarde dans la liste des fromages s’il y a un fromage à la position pos.
         @return true s'il y a un fromage à la position pos, false sinon. */
     private boolean fromageIci(Point pos) {
+        for (int i = 0; i < Labyrinthe.getFromages().size(); i++) {
+            if (Labyrinthe.getFromages().get(i).equals(pos)){
+                return true;
+            }
+        }
         return false;
     }
 
@@ -33,6 +40,15 @@ public class PyRat {
         @return true s'il y a un fromage à la position pos, false sinon. */
     private boolean fromageIci_EnOrdreConstant(Point pos) {
         return false;
+    }
+
+    private Set<Point> col (){
+        HashSet set = new HashSet();
+        for (int i = 0; i < Labyrinthe.getFromages().size(); i++) {
+            set.add(Labyrinthe.getFromages().get(i));
+        }
+        System.out.print(set);
+        return set;
     }
 
     /* Indique si le joueur peut passer de la position (du Point) « de » au point « a ».
