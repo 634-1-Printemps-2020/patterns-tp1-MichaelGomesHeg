@@ -40,6 +40,7 @@ public class PyRat {
         @return true s'il y a un fromage à la position pos, false sinon. */
     private boolean fromageIci_EnOrdreConstant(Point pos) {
         return false;
+
     }
 
     private Set<Point> col (){
