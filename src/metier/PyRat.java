@@ -39,8 +39,10 @@ public class PyRat {
     /* Regarde de manière performante (accès en ordre constant) s’il y a un fromage à la position pos.
         @return true s'il y a un fromage à la position pos, false sinon. */
     private boolean fromageIci_EnOrdreConstant(Point pos) {
+        if(matrice(pos)[5]){
+            return true;
+        }
         return false;
-
     }
 
     private Set<Point> col (){
@@ -48,8 +50,20 @@ public class PyRat {
         for (int i = 0; i < Labyrinthe.getFromages().size(); i++) {
             set.add(Labyrinthe.getFromages().get(i));
         }
-        System.out.print(set);
         return set;
+    }
+
+    private Boolean[] matrice(Point pos){
+        Boolean tab[] = new Boolean[Labyrinthe.getFromages().size()];
+        for (int i = 0; i < Labyrinthe.getFromages().size(); i++) {
+            if(Labyrinthe.getFromages().get(i).equals(pos)){
+                tab[i] = true;
+            }
+            else{
+                tab[i] = false;
+            }
+        }
+        return tab;
     }
 
     /* Indique si le joueur peut passer de la position (du Point) « de » au point « a ».

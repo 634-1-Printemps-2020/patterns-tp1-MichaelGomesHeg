@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b852990a-f2d1-44a1-be40-c4708cd82283" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="b852990a-f2d1-44a1-be40-c4708cd82283" name="Default" comment="Premier commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/metier/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/metier/Point.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/metier/PyRat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/metier/PyRat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/production/PyRat/metier/Point.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/production/PyRat/metier/Point.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/production/PyRat/metier/PyRat.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/production/PyRat/metier/PyRat.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -120,6 +119,28 @@
       <workItem from="1579190378689" duration="95000" />
       <workItem from="1579190584833" duration="16000" />
     </task>
+    <task id="LOCAL-00001" summary="Premier commit">
+      <created>1582240326883</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1582240326884</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Premier commit">
+      <created>1582240408099</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1582240408099</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Premier commit">
+      <created>1582240464091</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1582240464091</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -138,6 +159,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Premier commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Premier commit" />
   </component>
   <component name="masterDetails">
     <states>
