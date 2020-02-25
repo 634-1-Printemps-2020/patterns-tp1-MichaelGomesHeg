@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b852990a-f2d1-44a1-be40-c4708cd82283" name="Default" comment="Premier commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/metier/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/metier/Point.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/metier/PyRat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/metier/PyRat.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/production/PyRat/metier/Point.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/production/PyRat/metier/Point.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/production/PyRat/metier/PyRat.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/production/PyRat/metier/PyRat.class" afterDir="false" />
@@ -154,7 +155,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
