@@ -90,6 +90,7 @@ public class PyRat {
     private List<Point> pointsInatteignables(Point pos, Map<Point, List<Point>> laby) {
         System.out.println(laby);
 
+
         return null;
     }
 }
