@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b852990a-f2d1-44a1-be40-c4708cd82283" name="Default" comment="Mise en place de la methode &quot;PassagePossible_constant&quot;">
+    <list default="true" id="b852990a-f2d1-44a1-be40-c4708cd82283" name="Default" comment="Essaie de mise en place de la méthode &quot;PointInatteignable&quot;">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/metier/PyRat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/metier/PyRat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/production/PyRat/metier/PyRat.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/production/PyRat/metier/PyRat.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -158,7 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582722653653</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Essaie de mise en place de la méthode &quot;PointInatteignable&quot;">
+      <created>1582728795595</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1582728795595</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -184,7 +193,8 @@
     <MESSAGE value="Premier commit" />
     <MESSAGE value="Mise en place de la methode &quot;PassagePossible&quot;" />
     <MESSAGE value="Mise en place de la methode &quot;PassagePossible_constant&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mise en place de la methode &quot;PassagePossible_constant&quot;" />
+    <MESSAGE value="Essaie de mise en place de la méthode &quot;PointInatteignable&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Essaie de mise en place de la méthode &quot;PointInatteignable&quot;" />
   </component>
   <component name="masterDetails">
     <states>

@@ -103,18 +103,34 @@ public class PyRat {
 
     /* Retourne la liste des points qui ne peuvent pas être atteints depuis la position « pos ».
         @return la liste des points qui ne peuvent pas être atteints depuis la position « pos ». */
-    /*private List<Point> pointsInatteignables(Point pos, Map<Point, List<Point>> laby) {
-         return null;
-    }*/
+    private List<Point> pointsInatteignables(Point pos, Map<Point, List<Point>> laby) {
+         HashSet<Point> routage = new HashSet<>();
+         ArrayList<Point> marked = new ArrayList<>();
+         return _dfs(laby, pos, routage, marked);
+    }
+
+    private List<Point> _dfs(Map<Point, List<Point>> laby, Point pos, HashSet<Point> routage, ArrayList<Point> marked) {
+        marked.add(pos);
+        for (int i = 0; i < laby.size(); i++) {
+           if(!marked.contains(laby.get(i))){
+               routage.add(pos);
+               return _dfs(laby, (Point) laby.get(i), routage ,marked);
+           }
+
+        }
+        return null;
+    }
 
     /* Retourne la liste des points qui ne peuvent pas être atteints depuis la position « pos ».
     @return la liste des points qui ne peuvent pas être atteints depuis la position « pos ». */
-    private ArrayList<Object> pointsInatteignables(Point pos, Map<Point, List<Point>> laby) {
+    /*private ArrayList<Object> pointsInatteignables(Point pos, Map<Point, List<Point>> laby) {
+        System.out.print(laby);
         ArrayList<Object> list = new ArrayList<>();
         coll(pos, laby);
         for(Object el : coll(pos, laby)){
             list.add(el);
         }
+        System.out.println(list);
         return list;
     }
 
@@ -124,6 +140,6 @@ public class PyRat {
             col.add(mapentry.getValue());
         }
         return col;
-    }
+    }*/
 
 }
