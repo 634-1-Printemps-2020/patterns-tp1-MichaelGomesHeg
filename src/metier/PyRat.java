@@ -101,11 +101,29 @@ public class PyRat {
         return innerMap;
     }
 
-
-
     /* Retourne la liste des points qui ne peuvent pas être atteints depuis la position « pos ».
         @return la liste des points qui ne peuvent pas être atteints depuis la position « pos ». */
-    private List<Point> pointsInatteignables(Point pos, Map<Point, List<Point>> laby) {
+    /*private List<Point> pointsInatteignables(Point pos, Map<Point, List<Point>> laby) {
          return null;
+    }*/
+
+    /* Retourne la liste des points qui ne peuvent pas être atteints depuis la position « pos ».
+    @return la liste des points qui ne peuvent pas être atteints depuis la position « pos ». */
+    private ArrayList<Object> pointsInatteignables(Point pos, Map<Point, List<Point>> laby) {
+        ArrayList<Object> list = new ArrayList<>();
+        coll(pos, laby);
+        for(Object el : coll(pos, laby)){
+            list.add(el);
+        }
+        return list;
     }
+
+    private Set coll(Point pos, Map<Point, List<Point>> laby) {
+        Set<Object> col = new HashSet<>();
+        for (Map.Entry mapentry : laby.entrySet()) {
+            col.add(mapentry.getValue());
+        }
+        return col;
+    }
+
 }
